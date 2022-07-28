@@ -36,7 +36,7 @@ while turns > 0:
         break
     guess = input("guess a charchter:")
 
-    guess += guess
+    guesses = guesses + guess
 
     if guess not in word:
 
@@ -46,9 +46,6 @@ while turns > 0:
 
         print("You have", + turns, 'more guesses')
 
-        print("Wrong")
-
-        print("You have", + turns, 'more guesses')
 
         if turns == 0:
             print("You Loose, better luck next time!")
